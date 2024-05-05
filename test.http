@@ -1,0 +1,91 @@
+GET  http://myfpl.ddns.net/transcript?termId=64c7ef329e591ed5ecdc7696
+Content-Type: application/json
+
+{
+    "tokenId" : "eyJhbGciOiJSUzI1NiIsImtpZCI6ImZkNDhhNzUxMzhkOWQ0OGYwYWE2MzVlZjU2OWM0ZTE5NmY3YWU4ZDYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIxNzkwNDAxODE2NTItbXFlZXE2MmgzMmMyYThyMjQ4ZWVwM2ZtaW9qMGlwODkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIxNzkwNDAxODE2NTItOTVvN21vNnAwazVyZGQxc3NmaGJwNzdpMHJudWtlMnAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDYzMjEwMzQ2ODc0OTc5ODk4NTAiLCJlbWFpbCI6ImhvYW5ndmFudGhhbmhkZXZAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJWxINuIFRow6BuaCBIb8OgbmciLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y2FZYllfWTRKRk5KSzIyTjZvbUJpeFNrRUVRa05QeTk2Zko3LTNvSjcyb2c9czk2LWMiLCJnaXZlbl9uYW1lIjoiVsSDbiBUaMOgbmgiLCJmYW1pbHlfbmFtZSI6Ikhvw6BuZyIsImxvY2FsZSI6InZpIiwiaWF0IjoxNjkwNDYzMTA4LCJleHAiOjE2OTA0NjY3MDh9.z0Iye1csbrPs-gjyQ4rvf4TvztNXG1TEJa0cux6Tu--tjdt5ILa7AznlbMi9zvHBDcDvtAhvOsoUL3E1TNuOnSTpTerKymd6_K7OIWfywhIAPsoVK52A6lmuNhYIxwbVptITAMSIueP4UMkmQ9Eohe2KUqVBF_LqFGPaQP5PP9lkPYOqPD5Dhbr37S_K2aLYEFJNrUly6ELsundkWJ3qF65oVhgxmrzyD1BcxEGd_7lI6GMXoZqtKy-u1D3_rnfLFfDfDXQpoMARtzm7E2VIwoL1uKX4IEzENOH6DYUVt39GVqDj3233bMPBkcAgzPRSG9GtZ3Em3X_paMllK4EkAg"
+}
+
+###
+
+GET http://myfpl.ddns.net/news/search/phí
+
+Content-Type: application/json
+
+{
+}
+
+
+###
+POST http://localhost:9000/auth/login
+Content-Type: application/json
+
+{
+    "phoneNumber":"111111",
+    "password":"1"
+}
+###
+POST http://localhost:9000/auth/refeshtoken
+Content-Type: application/json
+
+{
+    "refeshtoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiMTA1ODEzNjk1MTAzMDQwNTE5MDgwIiwiX2lkIjoiNjRiMmVjOGNhNDkwMTk5NDAyZjdlZTQ1IiwidXNlck5hbWUiOiIiLCJmdWxsTmFtZSI6IlbEg24gdGjDoG5oIGhvw6BuZyIsInBob3RvIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y1djcU9aVlBxMmI2MGM1M0d5OFRUYm9EdnpKVUFScVQ3ZHVlSFQ5Qy12PXM5Ni1jIiwiZW1haWwiOiJyYW5keXRwdDIwMDJAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOiIiLCJpYXQiOjE2ODk1MjA5NTAsImV4cCI6MTY4OTYwNzM1MH0.j6UD9W8OmiOklSEBNACux2r-anP9sfrdAw_w-fqQNaI"
+}
+
+
+####
+GET https://appfoodfoly.onrender.com/product/getCategory
+Authorization: Beaer 
+
+###
+GET http://localhost:9000/api/getpopularproducts
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiIiwiX2lkIjoiNjRhNmU1NmUyZDU1N2E0YzI1YmZjOTU2IiwidXNlck5hbWUiOiJUMjUwIiwiZnVsbE5hbWUiOiIiLCJwaG90byI6IiIsImVtYWlsIjoiIiwicGhvbmVOdW1iZXIiOiI1c3Nhc2Rhc2RhZDIiLCJpYXQiOjE2ODkyODk1MDUsImV4cCI6MTY4OTMwMDMwNX0.mOqnfqKaDZsFaKANmYU-NhKhJt5UVW2HCh88d2bGa8s
+
+####
+POST  http://localhost:9000/auth/logingoogle
+Content-Type: application/json
+
+{
+    "webClientId":"179040181652-95o7mo6p0k5rdd1ssfhbp77i0rnuke2p.apps.googleusercontent.com",
+    "idToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3NmRhOWQzMTJjMzlhNDI5OTMyZjU0M2U2YzFiNmU2NTEyZTQ5ODMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIxNzkwNDAxODE2NTItbXFlZXE2MmgzMmMyYThyMjQ4ZWVwM2ZtaW9qMGlwODkuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiIxNzkwNDAxODE2NTItOTVvN21vNnAwazVyZGQxc3NmaGJwNzdpMHJudWtlMnAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDYzMjEwMzQ2ODc0OTc5ODk4NTAiLCJlbWFpbCI6ImhvYW5ndmFudGhhbmhkZXZAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsIm5hbWUiOiJWxINuIFRow6BuaCBIb8OgbmciLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y2FZYllfWTRKRk5KSzIyTjZvbUJpeFNrRUVRa05QeTk2Zko3LTNvSjcyb2c9czk2LWMiLCJnaXZlbl9uYW1lIjoiVsSDbiBUaMOgbmgiLCJmYW1pbHlfbmFtZSI6Ikhvw6BuZyIsImxvY2FsZSI6InZpIiwiaWF0IjoxNjg5NDQ2MzI0LCJleHAiOjE2ODk0NDk5MjR9.LrFA9gwkSKBbV-56TVFhjtrs8t5Mj7B2hNj8eoRqe5sM5sW58FKcmiq6h46oSmmp6oAhrluRP1sgfzjhvuLox82RcF7ykPZRpOJBBeffd6bWximc_WDNFr9T3JYa-cXSF02B00lmhvhZKPcicZav4w03fRVP9k9Ktwp_QTdF_SG4NKiDsgdEY9BOuTzQYWNLTiKL163fQ-w2Hp9UUOfbZMJDWU715_mFudT9UvjEJvfuznsYPZBPRj_TW9sKXPcGDfgR4pWZp2CUHTGUL8VlAybUVcHXmlED78qr4kA3WTUM_bXk28Fvvbl58zanQwwjuWjowaAOZSM0lUwM9Swhug"
+}
+
+
+###
+GET http://localhost:9000/api/getallproducts
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiIiwiX2lkIjoiNjRhNmU1NmUyZDU1N2E0YzI1YmZjOTU2IiwidXNlck5hbWUiOiJUMjUwIiwiZnVsbE5hbWUiOiIiLCJwaG90byI6IiIsImVtYWlsIjoiIiwicGhvbmVOdW1iZXIiOiI1c3Nhc2Rhc2RhZDIiLCJpYXQiOjE2ODkzMTE4MjMsImV4cCI6MTY4OTMyMjYyM30.jn-EaJYYXWSkltv0qbJistDqblxp5H7QrH8mLyTZ8Ww
+
+####
+POST  http://localhost:9000/api/addproducttocart
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiMTA4MTk1NDcxNjc2MDAxNjk5MjMyIiwiX2lkIjoiNjRiMGY3NDkwNjdkZWI1NGYyY2M4MDBmIiwidXNlck5hbWUiOiIiLCJmdWxsTmFtZSI6IkhvYW5nIFZhbiBUaGFuaCAoRlBMIEhDTSkiLCJwaG90byI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FBY0hUdGUyVktMd3hWeVpWVWIxUWVHSnlYMmtBNk1hZzJ5a0Nxc3haeGVnbFpEYz1zOTYtYyIsImVtYWlsIjoidGhhbmhodnBzMjU4MTJAZnB0LmVkdS52biIsInBob25lTnVtYmVyIjoiIiwiaWF0IjoxNjg5MzI0Njk4LCJleHAiOjE2ODkzMzU0OTh9.gzeqTputDbeZAMPia9ml7P0Ck1Mpax5_3O1gfiJoYWM
+
+{
+    "products":[
+    {
+      "_id": "64aa4461a2fd54744483f933",
+      "name": "Cucumber",
+      "price": 19000,
+      "category_id": "64a8efe65d16d499fee2df11",
+      "weight": 0.3,
+      "photo": "https://firebasestorage.googleapis.com/v0/b/appfood-72e17.appspot.com/o/cucumber.png?alt=media&token=eb37627d-9066-4058-bfd6-9f801680940a",
+      "count": 40,
+      "buy_count": 20,
+      "__v": 0,
+      "createdAt": "2023-07-09T05:23:45.048Z",
+      "updatedAt": "2023-07-09T05:23:45.048Z"
+    }
+    ]
+}
+
+###
+POST  http://localhost:9000/api/deleteproductfromcart
+Content-Type: application/json
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiMTA2MzIxMDM0Njg3NDk3OTg5ODUwIiwiX2lkIjoiNjRiMTEzMzc0M2I4ODNkNTNlMjY2OGFlIiwidXNlck5hbWUiOiIiLCJmdWxsTmFtZSI6IlbEg24gVGjDoG5oIEhvw6BuZyIsInBob3RvIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0Y2FZYllfWTRKRk5KSzIyTjZvbUJpeFNrRUVRa05QeTk2Zko3LTNvSjcyb2c9czk2LWMiLCJlbWFpbCI6ImhvYW5ndmFudGhhbmhkZXZAZ21haWwuY29tIiwicGhvbmVOdW1iZXIiOiIiLCJpYXQiOjE2ODkzMjc0OTAsImV4cCI6MTY4OTMzODI5MH0.RvSi48oOyg9dyJcO4-k89wOs1Vtsxjn5EdjkOT6z5RA
+
+{
+    "productId":"64aa4461a2fd54744483f933"
+}
+
+###
+GET http://localhost:9000/api/getProductFromCart
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb2NpYWxNZWRpYUlkIjoiIiwiX2lkIjoiNjRiMDlkMDE3OTdjYjNhYTZhNmM3ZjYzIiwidXNlck5hbWUiOiJUMjUwIiwiZnVsbE5hbWUiOiIiLCJwaG90byI6IiIsImVtYWlsIjoiIiwicGhvbmVOdW1iZXIiOiIxMTExMTEiLCJpYXQiOjE2ODkyOTYxMzcsImV4cCI6MTY4OTMwNjkzN30.-RNV9pL5ubB2GczZ_J1_A_btVbfSbD1lI39ljxZQ_9g
